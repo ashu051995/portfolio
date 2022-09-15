@@ -1,0 +1,14 @@
+.header_container {
+    display: flex;
+    height:140px;
+    justify-content: space-between;   
+}
+.header_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: .2rem;
+}
+.title_Name {
+    text-align: left;
+}
