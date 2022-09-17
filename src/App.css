@@ -8,6 +8,36 @@
   text-align: center;
 }
 
+.bold {
+  font-weight: 600;
+}
+
+.font_header {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.font_sub_header {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+
+
+.font_content {
+  font-size: 0.875rem;
+  color: rgb(104, 98, 98);
+}
+
+.font_sub_content {
+  font-size: 0.75rem;
+  color: rgb(151, 151, 151);
+}
+
+.font_white {
+  color: #fff
+}
+
 
 
 @media (prefers-reduced-motion: no-preference) {
@@ -23,21 +53,22 @@
 }
 
 .info-container {
-  width:30%;
+  width: 30%;
   background-color: #414141;
   padding: 2rem;
   color: white;
 }
 
 .main-container {
-  width:70%;
-  padding:0rem 2rem;
+  width: 70%;
+  padding: 0rem 2rem;
 }
 
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

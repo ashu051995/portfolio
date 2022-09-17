@@ -10,42 +10,42 @@ const UserDetail = () => {
     return (<>
         <div className={classes.header_container}>
             <div className={classes.header_title} >
-                <p className={classes.title_Name}>Ashutosh Kumar</p>
-                <p className={classes.title_Name}>Singh</p>
-                <p className={classes.title_Name}>Software Developer</p>
+                <span className={classes.title_header_Name +' font_header bold'}>ASHUTOSH KUMAR</span>
+                <span className={classes.title_header_Name +' font_header bold'}>SINGH</span>
+                <span className={classes.title_designation +' font_header bold'}>SOFTWARE DEVELOPER</span>
             </div>
             <div className={classes.header_title}>
-                <p className={classes.title_Name}><LocationOnIcon />Banguluru,Karnatka</p>
-                <p className={classes.title_Name}><LocalPhoneIcon />7982394846</p>
-                <p className={classes.title_Name}><EmailIcon />ashutosh051995@gail.com</p>
+                <div className={classes.title_Name +' font_sub_content'}><LocationOnIcon /><span>Banguluru,Karnatka</span></div>
+                <div className={classes.title_Name +' font_sub_content'}><LocalPhoneIcon /><span>7982394846</span></div>
+                <div className={classes.title_Name +' font_sub_content'}><EmailIcon /><span>ashutosh051995@gail.com</span></div>
             </div>
         </div>
-        <Divider></Divider>
-        <p>Work Experience</p>
-        <Grid container spacing={2}>
+        <Divider style={{marginBottom:'10px'}}></Divider>
+        <p className='font_sub_header' style={{marginBottom:"5px"}}>WORK EXPERIENCE</p>
+        <Grid container spacing={2} style={{marginBottom:'10px'}} >
             {UserDetailConfig.WORK_EXPIRIENCE.map(exp => {
                 return (<><Grid item xs={4} className ={classes.exp_company_detail}>
-                    <div>{exp.companyName}</div>
-                    <div>{exp.location}</div>
-                    <div>{exp.startingDuration}-{exp.endingDUration}</div>
+                    <div className='font_content' style={{fontWeight:600,fontStyle:'italic'}}>{exp.companyName}</div>
+                    <div className='font_content'>{exp.location}</div>
+                    <div className='font_content'>{exp.startingDuration}-{exp.endingDUration}</div>
                 </Grid>
                     <Grid item xs={8} className ={classes.exp_company_detail}>
-                        <div>{exp.description.map(point => (<p>{point}</p>))}</div>
+                        <div>{exp.description.map(point => (<p className='font_content'>{point}</p>))}</div>
                     </Grid></>)
             })}
 
         </Grid>
-        <Divider></Divider>
-        <p>Education</p>
+        <Divider style={{marginBottom:'10px'}}></Divider>
+        <p className='font_sub_header' style={{marginBottom:"5px"}}>EDUCATION</p>
         <Grid container spacing={2}>
             {UserDetailConfig.EDUCATIONS.map(exp => {
                 return (<><Grid item xs={4} className ={classes.exp_company_detail}>
-                    <div>{exp.universityName}</div>
-                    <div>{exp.location}</div>
-                    <div>{exp.startingDuration}-{exp.endingDUration}</div>
+                    <div className='font_content' style={{fontWeight:600,fontStyle:'italic'}}>{exp.universityName}</div>
+                    <div className='font_content'>{exp.location}</div>
+                    <div className='font_content'>{exp.startingDuration}-{exp.endingDUration}</div>
                 </Grid>
                     <Grid item xs={8} className ={classes.exp_company_detail}>
-                        <p>{exp.detail}</p>
+                        <p className='font_content'style={{marginBottom:'10px'}}>{exp.detail}</p>
                     </Grid></>)
             })}
 

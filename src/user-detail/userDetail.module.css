@@ -10,7 +10,24 @@
     padding: .2rem;
 }
 .title_Name {
-    text-align: left;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    
+}
+
+.title_header_Name {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    text-shadow: 1px 1px rgb(104, 98, 98) ;
+    font-size: 1.4rem;
+    
+}
+
+.title_designation {
+    color:rgb(104, 98, 98) ;
+    font-size: 1.4rem;
 }
 
 .exp_company_detail {
