@@ -37,6 +37,56 @@ const EDUCATIONS = [{
     detail: "Completed b.tech from college Shri Ram Murti Smarak College of engineering and Technology which is affiliated to Dr. Apj Abdul kalam Ajad technical university"
 }]
 
+const SKILLS = [
+{
+    name: "Javascript",
+    proficiency: 8
+}, {
+    name: "React",
+    proficiency: 8
+}, {
+    name: "Angular",
+    proficiency: 7
+}, {
+    name: "Express",
+    proficiency: 7
+}, {
+    name: "NodeJS",
+    proficiency: 7
+}, {
+    name: "Material Ui",
+    proficiency: 8
+}, {
+    name: "Tailwind Css",
+    proficiency: 5
+}, {
+    name: "Git",
+    proficiency: 9
+}, {
+    name: "Jira",
+    proficiency: 9
+}, {
+    name: "Docker",
+    proficiency: 5
+}, {
+    name: "AWS",
+    proficiency: 5
+},, {
+    name: "TypeScript",
+    proficiency: 6
+},, {
+    name: "Html",
+    proficiency: 8
+},, {
+    name: "CSS",
+    proficiency: 8
+},{
+    name:'NextJs',
+    proficiency:7
+}]
+
+
+
 export const UserDetailConfig = {
-    WORK_EXPIRIENCE, EDUCATIONS
+    WORK_EXPIRIENCE, EDUCATIONS,SKILLS
 }
